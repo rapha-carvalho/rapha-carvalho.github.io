@@ -1,6 +1,12 @@
 body {
   transition: 0.3s;
 }
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .switch {
   width: 80px;
   height: 40px;
@@ -10,26 +16,16 @@ body {
 }
 
 .flicker {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: rgb( 255, 255, 255);
+  color: rgb(49, 239, 125);
   position: absolute;
-  top: 5px;
-  left: 5px;
-  transition: 0.3s;
-  box-shadow:
-    inset 4px 4px 4px rgb(255, 255, 255),
-    inset -4px -4px 4px rgb( 195 193 198 / 90%);
+  left: 10px;
 }
 
 .language {
-  width: 20 px;
-  height: 20 px;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 0px;
   left: 45px;
-  background-color: rgb(255, 255, 255);
 }
 
 .dark {
@@ -37,14 +33,21 @@ body {
 }
 
 .dark .flicker {
-  transform: translateX(40px);
+  color: rgb(255, 255, 255);
 }
 
+.dark .language {
+  color: rgb(49, 239, 125); 
+}
+
+.dark > * {
+  color: rgb(255, 255, 255);
+}
 
 .main {
   height: 80vh;
 }
 
 .main-text {
-  width: 50%; 
+  width: 50%;
 }
