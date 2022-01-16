@@ -1,3 +1,6 @@
+body {
+  transition: 0.3s;
+}
 .switch {
   width: 80px;
   height: 40px;
@@ -10,15 +13,38 @@
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb( 255, 255, 255);
   position: absolute;
   top: 5px;
   left: 5px;
+  transition: 0.3s;
   box-shadow:
     inset 4px 4px 4px rgb(255, 255, 255),
-    inset -4px -4px 4px rgb(195, 193, 198);
+    inset -4px -4px 4px rgb( 195 193 198 / 90%);
+}
+
+.language {
+  width: 20 px;
+  height: 20 px;
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  background-color: rgb(255, 255, 255);
 }
 
 .dark {
-  background-color: rgb(57, 57, 57); 
+  background-color: rgb(57, 57, 57);
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+
+.main {
+  height: 80vh;
+}
+
+.main-text {
+  width: 50%; 
 }
