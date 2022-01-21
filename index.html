@@ -1,35 +1,274 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <title>Raphael Carvalho's portfolio </title>
-    <link rel="stylesheet" href="src/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>Blog</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css"/>
 
+    <!--Fav icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+
+    <!--Import poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>SOBRE</li>
-          <li>PROJETOS</li>
-          <li>CLIENTES</li>
-          <li>APRENDA</li>
-          <li><b>CONTATO</b></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-area">
-        <div class="hero-text">
-          <h1>Raphael Carvalho</h1>
-          <p>Data specialist. <img class="logo" href="https://linkedin.com/in/rapha-carvalho" src="src/images/lkdn_logo.png" alt="Perfil do LinkedIn" /> </p>
-          <div class="button">Sobre mim</div>
-        </div>
+
+    <!--Navigation-->
+    <nav class="navigation">
+
+      <!--Logo-->
+      <a href="#" class="logo">Blog</a>
+      <!--menu-btn-->
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+          <span class="nav icon"></span>
+      </label>
+
+
+
+      <!--menu-->
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#" class="nav-contact">Contact</a></li>
+      </ul>
+
+    </nav>
+
+    <!--page-container-->
+    <div class="page-container">
+        <!--top-bar-->
+      <div class="top-bar">
+        <span>Blast's<br/>Blog</span>
+        <div class="article-number"><span>37</span><br/>Articles</div>
       </div>
-    </section>
-    <footer>
-      <p>raphaelcbernardino@gmail.com</p>
-    </footer>
-    <script src="src/scripts.js"></script>
+
+    <!--Blog-section-->
+      <section id="blog">
+
+        <!--heading-->
+        <div class="blog-heading">
+          <h1>Data addict</h1>
+        </div>
+        <!--Filter-->
+        <ul class="blog-filter">
+          <li class="list blog-filter-active" data-filter="all">All</li>/
+          <li class="list" data-filter="GoogleSheets">Google Sheets</li>/
+          <li class="list" data-filter="Tableau">Tableau</li>/
+          <li class="list" data-filter="GoogleAnalytcs">Google Analytcs</li>/
+          <li class="list" data-filter="Python">Python</li>/
+          <li class="list" data-filter="Business & Other">Business & Other</li>
+        </ul>
+        <!--blog-box-container-->
+        <div class="blog-container">
+
+          <!--box-1-->
+          <a href="#" class="blog-box Tableau">
+
+            <!--img-->
+            <div class="blog-img">
+              <img src="images/blog-1.png" alt="1">
+            </div>
+
+            <!--text-->
+            <div class = "blog-text">
+              <span class="category">Tableau</span>
+              <strong> How to do something on Tableau</strong>
+              <span class="blog-post-time">June 9 - 5 min read</span>
+
+            </div>
+
+          </a>
+
+          <!--box-2-->
+          <a href="#" class="blog-box GoogleSheets">
+
+            <!--img-->
+            <div class="blog-img">
+              <img src="images/blog-2.png" alt="1">
+            </div>
+
+            <!--text-->
+            <div class = "blog-text">
+              <span class="category">Google Sheets</span>
+              <strong> How to do something on Tableau</strong>
+              <span class="blog-post-time">June 9 - 5 min read</span>
+
+            </div>
+
+          </a>
+
+          <!--box-3-->
+          <a href="#" class="blog-box">
+
+            <!--img-->
+            <div class="blog-img">
+              <img src="images/blog-3.png" alt="1">
+            </div>
+
+            <!--text-->
+            <div class = "blog-text Tableau">
+              <span class="category">Tableau</span>
+              <strong> How to do something on Tableau</strong>
+              <span class="blog-post-time">June 9 - 5 min read</span>
+
+            </div>
+
+          </a>
+
+          <!--box-4-->
+          <a href="#" class="blog-box Tableau">
+
+            <!--img-->
+            <div class="blog-img">
+              <img src="images/blog-1.png" alt="1">
+            </div>
+
+            <!--text-->
+            <div class = "blog-text">
+              <span class="category">Tableau</span>
+              <strong> How to do something on Tableau</strong>
+              <span class="blog-post-time">June 9 - 5 min read</span>
+
+            </div>
+
+          </a>
+
+          <!--box-5-->
+          <a href="#" class="blog-box Tableau">
+
+            <!--img-->
+            <div class="blog-img">
+              <img src="images/blog-2.png" alt="1">
+            </div>
+
+            <!--text-->
+            <div class = "blog-text">
+              <span class="category">Tableau</span>
+              <strong> How to do something on Tableau</strong>
+              <span class="blog-post-time">June 9 - 5 min read</span>
+
+            </div>
+
+          </a>
+
+          <!--box-6-->
+          <a href="#" class="blog-box GoogleSheets">
+
+            <!--img-->
+            <div class="blog-img">
+              <img src="images/blog-3.png" alt="1">
+            </div>
+
+            <!--text-->
+            <div class = "blog-text">
+              <span class="category">Google Sheets</span>
+              <strong> How to do something on Tableau</strong>
+              <span class="blog-post-time">June 9 - 5 min read</span>
+
+            </div>
+
+          </a>
+        </div>
+
+      </section>
+    </div>
+
+  <!--page-container-end-->
+
+
+  <!--footer-->
+  <footer>
+    <div class="footer-container">
+      <!--heading-->
+      <div class="footer-heading">
+        <h4> It's time to stop scrolling.
+          <br/>
+          Let's create something.
+        </h4>
+
+          <h3>get in touch.</h3>
+    <!--footer-content-->
+    <div class="footer-content">
+
+        <!--box-->
+        <div class="footer-box">
+          <strong>explore</strong>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--box-->
+        <div class="footer-box">
+          <strong>explore</strong>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--box-->
+        <div class="footer-box">
+          <strong>explore</strong>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!--box-->
+        <div class="footer-box">
+          <strong>explore</strong>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!--footer-bottom-->
+
+    </div>
+  </footer>
+
+
+
+  <!--JQuery-->
+  <script src="js/jquery.js"></script>
+  <!--Script-->
+  <script type="text/javascript">
+    $(document).on('click', '.blog-filter li', function(){
+      $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+    });
+
+    /*filter*/
+    $(document).ready(function(){
+        $('.list').click(function(){
+            const value = $(this).attr('data-filter');
+            if(value == 'all'){
+                $('.blog-box').show('1000');
+            }
+            else {
+                $('.blog-box').not('.'+value).hide('1000');
+                $('.blog-box').filter('.'+value).show('1000');
+            }
+      });
+    });
+
+  </script>
   </body>
 </html>
