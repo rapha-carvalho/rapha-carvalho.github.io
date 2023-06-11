@@ -6,7 +6,7 @@
     <!--Title-->
     <title>Blog</title>
     <!--Stylesheet-->
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/blast.css"/>
 
     <!--Fav icon-->
     <link rel="shortcut icon" href="images/fav-icon.png"/>
@@ -19,256 +19,274 @@
   <body>
 
     <!--Navigation-->
+
+    <nav id="nav-mobile" class="navigation-mobile">
+
+      <!--Logo-->
+      <div class="nav-mobile-div">
+        <img id="logo-mobile" src="images/Blast_Full_Black.png" alt="1" class="logo-nav">
+        <button id="mobile-button" class="hero-cta-button">Submit</button>
+      </div>
+    </nav>
+
     <nav class="navigation">
 
       <!--Logo-->
-      <a href="#" class="logo">Blog</a>
-      <!--menu-btn-->
-      <input type="checkbox" class="menu-btn" id="menu-btn">
-      <label for="menu-btn" class="menu-icon">
-          <span class="nav icon"></span>
-      </label>
+      <img id="logo-desktop" src="images/Blast_Icon_Black.png" alt="1" class="logo-nav">
 
-
-
+      <div class="menu-item">
       <!--menu-->
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#" class="nav-contact">Contact</a></li>
-      </ul>
-
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><button class="hero-cta-button">Submit</button></li>
+        </ul>
+    </div>
     </nav>
 
     <!--page-container-->
-    <div class="page-container">
-        <!--top-bar-->
-      <div class="top-bar">
-        <span>Blast's<br/>Blog</span>
-        <div class="article-number"><span>37</span><br/>Articles</div>
-      </div>
 
     <!--Blog-section-->
-      <section id="blog">
-
-        <!--heading-->
-        <div class="blog-heading">
-          <h1>Data addict</h1>
+      <section id="hero">
+        <div class = "hero-cta"> 
+          <div class="main-cta">
+            <h1>We build analytics solutions for you.</h1>
+            <p>Our experts have worked on dozen of analytical projects and are ready to tackle yours. We specialize in web analytics, data pipelines, dashboard creation and data analysis.</p>
+            <div class="email-hero">
+              <div class="email-hero-column">
+                <input class="hero-email-input" type="text" placeholder="Enter your email" style="width:300px; height:35px;"></input> 
+                <button class="hero-cta-button">Submit</button>
+              </div>
+            </div>
+          </div>        
+          
         </div>
-        <!--Filter-->
-        <ul class="blog-filter">
-          <li class="list blog-filter-active" data-filter="all">All</li>/
-          <li class="list" data-filter="GoogleSheets">Google Sheets</li>/
-          <li class="list" data-filter="Tableau">Tableau</li>/
-          <li class="list" data-filter="GoogleAnalytcs">Google Analytcs</li>/
-          <li class="list" data-filter="Python">Python</li>/
-          <li class="list" data-filter="Business & Other">Business & Other</li>
-        </ul>
-        <!--blog-box-container-->
-        <div class="blog-container">
-
-          <!--box-1-->
-          <a href="#" class="blog-box Tableau">
-
-            <!--img-->
-            <div class="blog-img">
-              <img src="images/blog-1.png" alt="1">
-            </div>
-
-            <!--text-->
-            <div class = "blog-text">
-              <span class="category">Tableau</span>
-              <strong> How to do something on Tableau</strong>
-              <span class="blog-post-time">June 9 - 5 min read</span>
-
-            </div>
-
-          </a>
-
-          <!--box-2-->
-          <a href="#" class="blog-box GoogleSheets">
-
-            <!--img-->
-            <div class="blog-img">
-              <img src="images/blog-2.png" alt="1">
-            </div>
-
-            <!--text-->
-            <div class = "blog-text">
-              <span class="category">Google Sheets</span>
-              <strong> How to do something on Tableau</strong>
-              <span class="blog-post-time">June 9 - 5 min read</span>
-
-            </div>
-
-          </a>
-
-          <!--box-3-->
-          <a href="#" class="blog-box">
-
-            <!--img-->
-            <div class="blog-img">
-              <img src="images/blog-3.png" alt="1">
-            </div>
-
-            <!--text-->
-            <div class = "blog-text Tableau">
-              <span class="category">Tableau</span>
-              <strong> How to do something on Tableau</strong>
-              <span class="blog-post-time">June 9 - 5 min read</span>
-
-            </div>
-
-          </a>
-
-          <!--box-4-->
-          <a href="#" class="blog-box Tableau">
-
-            <!--img-->
-            <div class="blog-img">
-              <img src="images/blog-1.png" alt="1">
-            </div>
-
-            <!--text-->
-            <div class = "blog-text">
-              <span class="category">Tableau</span>
-              <strong> How to do something on Tableau</strong>
-              <span class="blog-post-time">June 9 - 5 min read</span>
-
-            </div>
-
-          </a>
-
-          <!--box-5-->
-          <a href="#" class="blog-box Tableau">
-
-            <!--img-->
-            <div class="blog-img">
-              <img src="images/blog-2.png" alt="1">
-            </div>
-
-            <!--text-->
-            <div class = "blog-text">
-              <span class="category">Tableau</span>
-              <strong> How to do something on Tableau</strong>
-              <span class="blog-post-time">June 9 - 5 min read</span>
-
-            </div>
-
-          </a>
-
-          <!--box-6-->
-          <a href="#" class="blog-box GoogleSheets">
-
-            <!--img-->
-            <div class="blog-img">
-              <img src="images/blog-3.png" alt="1">
-            </div>
-
-            <!--text-->
-            <div class = "blog-text">
-              <span class="category">Google Sheets</span>
-              <strong> How to do something on Tableau</strong>
-              <span class="blog-post-time">June 9 - 5 min read</span>
-
-            </div>
-
-          </a>
-        </div>
-
       </section>
-    </div>
-
-  <!--page-container-end-->
 
 
-  <!--footer-->
-  <footer>
-    <div class="footer-container">
-      <!--heading-->
-      <div class="footer-heading">
-        <h4> It's time to stop scrolling.
-          <br/>
-          Let's create something.
-        </h4>
+      <section id="social-validation">
+        <div class="team-msg">
+          <p>Our team has worked for some of the market leaders: </p>
+        </div>
+        <div class="logo-belt">
+            <div class="logo"><img src="images/greenlight.png" alt="Logo 1"></div>
+            <div class="logo"><img src="images/nubank_logo.png" alt="Logo 2"></div>
+            <div class="logo"><img src="images/sympla_logo.png" alt="Logo 3"></div>
+            <div class="logo"><img src="images/ifood_logo.png" alt="Logo 4"></div>
+            <div class="logo"><img src="images/xp_logo.png" alt="Logo 5"></div>
+            <div class="logo"><img src="images/qconcursos_logo.png" alt="Logo 6"></div>
+            <div class="logo"><img src="images/hotmart_logo.png" alt="Logo 7"></div>
+            <div class="logo"><img src="images/burgues_logo.png" alt="Logo 8"></div>
+            <div class="logo"><img src="images/toptal_logo.png" alt="Logo 9"></div>
+            <div class="logo"><img src="images/greenlight.png" alt="Logo 1"></div>
+            <div class="logo"><img src="images/nubank_logo.png" alt="Logo 2"></div>
+            <div class="logo"><img src="images/sympla_logo.png" alt="Logo 3"></div>
+            <div class="logo"><img src="images/qconcursos_logo.png" alt="Logo 6"></div>
+            <div class="logo"><img src="images/ifood_logo.png" alt="Logo 4"></div>
 
-          <h3>get in touch.</h3>
-    <!--footer-content-->
-    <div class="footer-content">
+  
+            <!-- Add more logo divs as needed -->
+        </div>
+      </section>
 
-        <!--box-->
-        <div class="footer-box">
-          <strong>explore</strong>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <section id="features">
+        <div class="features"> 
+          <div class="features-text">
+            <h2>Our specialties</h2>
+          </div>
+          <div class="features-specialties">
+            <ul> 
+            <li onclick="showCarousel(0)"> <h3>Digital analytics</h3></li>
+            <li onclick="showCarousel(1)"> <h3>Data pipelines</h3></li>
+            <li onclick="showCarousel(2)"> <h3>Dashboard creation</h3></li>
+            <li onclick="showCarousel(3)"> <h3>Data analysis</h3></li>
+            </ul>
+          </div>
+        
+
+        <div class="carousel-container">
+          <div class="carousel active" id="carousel0">
+            <!-- Content for Digital analytics carousel card -->
+            <div class="carousel-all-elements">
+              <div class="carousel-title"><h3>Digital analytics</h3></div>
+              <div class="carousel-card-container"> 
+                <div class="carousel-card">
+                  <div class="carousel-card-section">
+                    <h4 class="carousel-card-title">GA4 & GTM implementation</h4>
+                    <p class="carousel-card-description">We help you install and setup your GA4/GTM, implementing tags, custom dimensions / metrics and goals.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <div class="carousel-card-section">
+                    <h4 class="carousel-card-title">GA4 & GTM audit</h4>
+                    <p class="carousel-card-description">We validate your GA4/GTM implementation, providing a detailed report of what needs to be addressed/fixed.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <div class="carousel-card-section">
+                    <h4 class="carousel-card-title">BigQuery data export</h4>
+                    <p class="carousel-card-description">We help you bring the most out of your GA4, Google Ads or Google Search Console data by setting up data pipelines on BigQuery.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <div class="carousel-card-section">
+                    <h4 class="carousel-card-title">Web analytics training & consulting</h4>
+                    <p class="carousel-card-description">We'll address your main questions and help you get the most out of your web analytics infrastructure.</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+          <div class="carousel" id="carousel1">
+            <!-- Content for Data pipelines carousel card -->
+            <h4>Data pipelines Carousel</h4>
+            <p>This is the carousel for Data pipelines.</p>
+          </div>
+      
+          <div class="carousel" id="carousel2">
+            <!-- Content for Dashboard creation carousel card -->
+            <h4>Dashboard creation Carousel</h4>
+            <p>This is the carousel for Dashboard creation.</p>
+          </div>
+      
+          <div class="carousel" id="carousel3">
+            <!-- Content for Data analysis carousel card -->
+            <h4>Data analysis Carousel</h4>
+            <p>This is the carousel for Data analysis.</p>
+          </div>
         </div>
 
-        <!--box-->
-        <div class="footer-box">
-          <strong>explore</strong>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      
+        <script>
+          // Set the first list element as active by default
+          document.querySelector('.features-specialties li:first-child').classList.add('active');
+
+          function showCarousel(index) {
+
+          const h3Elements = document.querySelectorAll('.features-specialties li h3');
+    
+          // Remove the "active" class from all <h3> elements
+          h3Elements.forEach((h3) => {
+            h3.classList.remove('active');
+          });
+    
+          // Add the "active" class to the clicked <h3> element
+          h3Elements[index].classList.add('active');
+          
+            
+          // Hide all carousels
+          const carousels = document.querySelectorAll('.carousel');
+          carousels.forEach(carousel => {
+            carousel.classList.remove('active');
+          });
+    
+          // Show the selected carousel
+          const selectedCarousel = document.getElementById(`carousel${index}`);
+          selectedCarousel.classList.add('active');
+          }
+          // Invoke the showCarousel() function with the index of the first element (0) when the page loads
+          document.addEventListener('DOMContentLoaded', function() {
+          showCarousel(0);
+          })
+        </script>
+
+      <section id="pre-cards">
+
+        <div class="expert-mobile">
+          <h2 class="highlight-text">Our founders. </h2>
         </div>
+        
+        <div class="highlight-section">
+          <h2 class="highlight-text">Experienced founders with diverse background and skillset. </h2>
+          <p class="highlight-paragraph">Our founders have worked for the top tech companies in Brazil and for clients in US and Europe. All of them come from a Business background and have the right technical skillset and business mindset to turn your data into actionable insights.</p>
+        </div>      
+      </section>
 
-        <!--box-->
-        <div class="footer-box">
-          <strong>explore</strong>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <section id="partner-showcase">
+        
+        <div class="card-container">
+   
+          <div class="card">
+            <div class="card-section">
+              <div class="profile-section">
+                <div class="image-container">
+                  <img src="images/raphael_perfil.jpg" alt="Profile Picture" class="profile-picture">
+                  <div class="legend">Analytics Sr. Lead XP.</div>
+                </div>
+                <div class="card-section">
+                  <h2 class="card-title">Raphael Carvalho </h2>
+                  <p class="card-description">Raphael is a seasoned data specialist having worked on the market leaders for Brazil, US and Europe. He has experience leading data analytics teams, building up data warehouses from scratch and consulting on business strategy for major brands. </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-section">
+              <div class="image-grid">
+                <img src="images/nubank_logo.png" alt="Image 1">
+                <img src="images/xp_logo.png" alt="Image 2">
+                <img src="images/burgues_logo.png" alt="Image 3">
+                <img src="images/qconcursos_logo.png" alt="Image 4">
+                <img src="images/toptal_logo.png" alt="Image 5">
+                <img src="images/greenlight.png" alt="Image 6">
+                <!-- Add more images up to a maximum of 12 -->
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-section">
+              <div class="profile-section">
+                <div class="image-container">
+                  <img src="images/raphael_perfil.jpg" alt="Profile Picture" class="profile-picture">
+                  <div class="legend">Analytics Sr. Lead XP.</div>
+                </div>
+                <div class="card-section">
+                  <h2 class="card-title">Raphael Carvalho </h2>
+                  <p class="card-description">Raphael is a seasoned data specialist having worked on the market leaders for Brazil, US and Europe. He has experience leading data analytics teams, building up data warehouses from scratch and consulting on business strategy for major brands. </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-section">
+              <div class="image-grid">
+                <img src="images/nubank_logo.png" alt="Image 1">
+                <img src="images/xp_logo.png" alt="Image 2">
+                <img src="images/burgues_logo.png" alt="Image 3">
+                <img src="images/qconcursos_logo.png" alt="Image 4">
+                <img src="images/toptal_logo.png" alt="Image 5">
+                <img src="images/greenlight.png" alt="Image 6">
+                <!-- Add more images up to a maximum of 12 -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-section">
+              <div class="profile-section">
+                <div class="image-container">
+                  <img src="images/perfil_pio.jpeg" alt="Profile Picture" class="profile-picture">
+                  <div class="legend">Wingman at Tinder.</div>
+                </div>
+                <div class="card-section">
+                  <h2 class="card-title">Guilherme de Produtos </h2>
+                  <p class="card-description">Raphael is a seasoned data specialist having worked on the market leaders for Brazil, US and Europe. He has experience leading data analytics teams, building up data warehouses from scratch and consulting on business strategy for major brands. </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-section">
+              <div class="image-grid">
+                <img src="images/nubank_logo.png" alt="Image 1">
+                <img src="images/xp_logo.png" alt="Image 2">
+                <img src="images/burgues_logo.png" alt="Image 3">
+                <img src="images/qconcursos_logo.png" alt="Image 4">
+                <img src="images/toptal_logo.png" alt="Image 5">
+                <img src="images/greenlight.png" alt="Image 6">
+                <!-- Add more images up to a maximum of 12 -->
+              </div>
+            </div>
+          </div>
+          <!-- Repeat the structure for two more cards -->
+          
         </div>
+        
+      </section>
 
-        <!--box-->
-        <div class="footer-box">
-          <strong>explore</strong>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <!--footer-bottom-->
-
-    </div>
-  </footer>
-
-
-
-  <!--JQuery-->
-  <script src="js/jquery.js"></script>
-  <!--Script-->
-  <script type="text/javascript">
-    $(document).on('click', '.blog-filter li', function(){
-      $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
-    });
-
-    /*filter*/
-    $(document).ready(function(){
-        $('.list').click(function(){
-            const value = $(this).attr('data-filter');
-            if(value == 'all'){
-                $('.blog-box').show('1000');
-            }
-            else {
-                $('.blog-box').not('.'+value).hide('1000');
-                $('.blog-box').filter('.'+value).show('1000');
-            }
-      });
-    });
-
-  </script>
-  </body>
-</html>
