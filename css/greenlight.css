@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Coolvetica', sans-serif;
+  
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    line-height: 200%;
+    margin-top: 20px;
+  }
+
+
+
+  
+  .hero {
+     /* background-image: url("../images/solar_pannel.png"); The image used */
+    background-color: blue;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: 2px solid black;
+    height: 89vh; /* You must set a specified height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-text {
+    height: 40vh;
+    width: 70%;
+    margin-left:15%; 
+    margin-right: 15%;
+    object-fit: cover;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+  }
+  .main-text img {
+    width:500px;
+    height:auto;
+    object-fit: contain;
+    object-position: center;
+  }
+  .features {
+    background-color: aqua;
+    height: 30vh; 
+  }
