@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/blast.css"/>
 
     <!--Fav icon-->
-    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <link rel="shortcut icon" href="images/Blast_Icon_Black.png"/>
 
     <!--Import poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,27 +20,15 @@
 
     <!--Navigation-->
 
-    <nav id="nav-mobile" class="navigation-mobile">
-
-      <!--Logo-->
-      <div class="nav-mobile-div">
-        <img id="logo-mobile" src="images/Blast_Full_Black.png" alt="1" class="logo-nav">
-        <button id="mobile-button" class="hero-cta-button">Submit</button>
-      </div>
-    </nav>
-
     <nav class="navigation">
 
       <!--Logo-->
-      <img id="logo-desktop" src="images/Blast_Icon_Black.png" alt="1" class="logo-nav">
+      <img id="logo-desktop" src="images/Blast_Full_Black.png" alt="1" class="logo-nav">
 
       <div class="menu-item">
       <!--menu-->
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><button class="hero-cta-button">Submit</button></li>
+          <li><button class="cta-button">Contact</button></li>
         </ul>
     </div>
     </nav>
@@ -55,12 +43,13 @@
             <p>Our experts have worked on dozen of analytical projects and are ready to tackle yours. We specialize in web analytics, data pipelines, dashboard creation and data analysis.</p>
             <div class="email-hero">
               <div class="email-hero-column">
-                <input class="hero-email-input" type="text" placeholder="Enter your email" style="width:300px; height:35px;"></input> 
-                <button class="hero-cta-button">Submit</button>
+                <textarea class="hero-email-input" type="text" placeholder="Enter your email"></textarea> 
+                <textarea class="hero-name-input" type="text" placeholder="Enter your name"></textarea> 
+                <textarea class="hero-description-input" type="text" placeholder="Briefly tell us how we can help you"></textarea> 
+                <button class="cta-button">Submit</button>
               </div>
             </div>
-          </div>        
-          
+          </div>          
         </div>
       </section>
 
@@ -93,23 +82,11 @@
       <section id="features">
         <div class="features"> 
           <div class="features-text">
-            <h2>Our specialties</h2>
+            <h2>WHAT WE DO</h2>
           </div>
-          <div class="features-specialties">
-            <ul> 
-            <li onclick="showCarousel(0)"> <h3>Digital analytics</h3></li>
-            <li onclick="showCarousel(1)"> <h3>Data pipelines</h3></li>
-            <li onclick="showCarousel(2)"> <h3>Dashboard creation</h3></li>
-            <li onclick="showCarousel(3)"> <h3>Data analysis</h3></li>
-            </ul>
-          </div>
-        
 
         <div class="carousel-container">
-          <div class="carousel active" id="carousel0">
             <!-- Content for Digital analytics carousel card -->
-            <div class="carousel-all-elements">
-              <div class="carousel-title"><h3>Digital analytics</h3></div>
               <div class="carousel-card-container"> 
                 <div class="carousel-card">
                   <div class="carousel-card-section">
@@ -135,169 +112,83 @@
                     <p class="carousel-card-description">We'll address your main questions and help you get the most out of your web analytics infrastructure.</p>
                   </div>
                 </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-          <div class="carousel" id="carousel1">
-            <!-- Content for Data pipelines carousel card -->
-            <h4>Data pipelines Carousel</h4>
-            <p>This is the carousel for Data pipelines.</p>
-          </div>
-      
-          <div class="carousel" id="carousel2">
-            <!-- Content for Dashboard creation carousel card -->
-            <h4>Dashboard creation Carousel</h4>
-            <p>This is the carousel for Dashboard creation.</p>
-          </div>
-      
-          <div class="carousel" id="carousel3">
-            <!-- Content for Data analysis carousel card -->
-            <h4>Data analysis Carousel</h4>
-            <p>This is the carousel for Data analysis.</p>
-          </div>
-        </div>
-
-      
-        <script>
-          // Set the first list element as active by default
-          document.querySelector('.features-specialties li:first-child').classList.add('active');
-
-          function showCarousel(index) {
-
-          const h3Elements = document.querySelectorAll('.features-specialties li h3');
-    
-          // Remove the "active" class from all <h3> elements
-          h3Elements.forEach((h3) => {
-            h3.classList.remove('active');
-          });
-    
-          // Add the "active" class to the clicked <h3> element
-          h3Elements[index].classList.add('active');
-          
-            
-          // Hide all carousels
-          const carousels = document.querySelectorAll('.carousel');
-          carousels.forEach(carousel => {
-            carousel.classList.remove('active');
-          });
-    
-          // Show the selected carousel
-          const selectedCarousel = document.getElementById(`carousel${index}`);
-          selectedCarousel.classList.add('active');
-          }
-          // Invoke the showCarousel() function with the index of the first element (0) when the page loads
-          document.addEventListener('DOMContentLoaded', function() {
-          showCarousel(0);
-          })
-        </script>
-
-
-
-      <section id="pre-cards">
-
-        <div class="expert-mobile">
-          <h2 class="highlight-mobile">Our founders</h2>
-        </div>
-        
-        <div class="highlight-section">
-          <h2 class="highlight-text">Experienced founders with diverse background and skillset. </h2>
-          <p class="highlight-paragraph">Our founders have worked for the top tech companies in Brazil and for clients in US and Europe. All of them come from a Business background and have the right technical skillset and business mindset to turn your data into actionable insights.</p>
-        </div>      
-      </section>
-
-      <section id="partner-showcase">
-        
-        <div class="card-container">
-   
-          <div class="card">
-            <div class="card-section">
-              <div class="profile-section">
-                <div class="image-container">
-                  <img src="images/raphael_perfil.jpg" alt="Profile Picture" class="profile-picture">
-                  <div class="legend">
-                      <h4>Raphael Carvalho</h4>
-                      <p>Analytics Sr. Lead at XP</p>
+                <div class="carousel-card">
+                  <div class="carousel-card-section">
+                    <h4 class="carousel-card-title">Web analytics training & consulting</h4>
+                    <p class="carousel-card-description">We'll address your main questions and help you get the most out of your web analytics infrastructure.</p>
                   </div>
                 </div>
-                <div class="card-section">
-                  <h2 class="card-title">Raphael Carvalho </h2>
-                  <p class="card-description">Raphael is a seasoned data specialist having worked on the market leaders for Brazil, US and Europe. He has experience leading data analytics teams, building up data warehouses from scratch and consulting on business strategy for major brands. </p>
+                <div class="carousel-card">
+                  <div class="carousel-card-section">
+                    <h4 class="carousel-card-title">Web analytics training & consulting</h4>
+                    <p class="carousel-card-description">We'll address your main questions and help you get the most out of your web analytics infrastructure.</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="card-section">
-              <div class="image-grid">
-                <img src="images/nubank_logo.png" alt="Image 1">
-                <img src="images/xp_logo.png" alt="Image 2">
-                <img src="images/burgues_logo.png" alt="Image 3">
-                <img src="images/qconcursos_logo.png" alt="Image 4">
-                <img src="images/toptal_logo.png" alt="Image 5">
-                <img src="images/greenlight.png" alt="Image 6">
-                <!-- Add more images up to a maximum of 12 -->
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-section">
-              <div class="profile-section">
-                <div class="image-container">
-                  <img src="images/raphael_perfil.jpg" alt="Profile Picture" class="profile-picture">
-                  <div class="legend">
-                    <h4>Raphael Carvalho</h4>
-                    <p>Analytics Sr. Lead at XP</p>
-                </div>
-                </div>
-                <div class="card-section">
-                  <h2 class="card-title">Raphael Carvalho </h2>
-                  <p class="card-description">Raphael is a seasoned data specialist having worked on the market leaders for Brazil, US and Europe. He has experience leading data analytics teams, building up data warehouses from scratch and consulting on business strategy for major brands. </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-section">
-              <div class="image-grid">
-                <img src="images/nubank_logo.png" alt="Image 1">
-                <img src="images/xp_logo.png" alt="Image 2">
-                <img src="images/burgues_logo.png" alt="Image 3">
-                <img src="images/qconcursos_logo.png" alt="Image 4">
-                <img src="images/toptal_logo.png" alt="Image 5">
-                <img src="images/greenlight.png" alt="Image 6">
-                <!-- Add more images up to a maximum of 12 -->
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-section">
-              <div class="profile-section">
-                <div class="image-container">
-                  <img src="images/perfil_pio.jpeg" alt="Profile Picture" class="profile-picture">
-                  <div class="legend">
-                    <h4>Guilherme Pio</h4>
-                    <p>Sr. Data Analyst at Vana AI</p>
-                </div>
-                </div>
-                <div class="card-section">
-                  <h2 class="card-title">Guilherme de Produtos </h2>
-                  <p class="card-description">Raphael is a seasoned data specialist having worked on the market leaders for Brazil, US and Europe. He has experience leading data analytics teams, building up data warehouses from scratch and consulting on business strategy for major brands. </p>
-                </div>
-              </div>
-            </div>
-            <div class="card-section">
-              <div class="image-grid">
-                <img src="images/nubank_logo.png" alt="Image 1">
-                <img src="images/xp_logo.png" alt="Image 2">
-                <img src="images/burgues_logo.png" alt="Image 3">
-                <img src="images/qconcursos_logo.png" alt="Image 4">
-                <img src="images/toptal_logo.png" alt="Image 5">
-                <img src="images/greenlight.png" alt="Image 6">
-                <!-- Add more images up to a maximum of 12 -->
-              </div>
-            </div>
-          </div>
-          <!-- Repeat the structure for two more cards -->
-          
-        </div>
+              </div> 
         
-      </section>
+        </div>
+      </section> 
+
+      <section id="process-section">
+
+          <div class="process">
+
+            <div class="process-title"> 
+              <h2>OUR PROCESS</h2>
+            </div>
+            
+            <div class="process-grid"> 
+              <div class="process-row"> 
+                <div class="process-card">
+                  <div class="process-card-section">
+                    <h4 class="process-card-title">PROBLEM FRAMING</h4>
+                    <p class="process-card-description">We help you bring the most out of your GA4, Google Ads or Google Search Console data by setting up data pipelines on BigQuery.</p>
+                  </div>
+                </div>
+                <div class="process-card">
+                  <div class="process-card-section">
+                    <h4 class="process-card-title">PROJECT OUTLINE</h4>
+                    <p class="process-card-description">We help you bring the most out of your GA4, Google Ads or Google Search Console data by setting up data pipelines on BigQuery.</p>
+                  </div>
+                </div>
+                <div class="process-card">
+                  <div class="process-card-section">
+                    <h4 class="process-card-title">ITERATIVE DEVELOPMENT</h4>
+                    <p class="process-card-description">We help you bring the most out of your GA4, Google Ads or Google Search Console data by setting up data pipelines on BigQuery.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <section class="final-cta"> 
+
+            <div class="final-cta-div">
+  
+              <div class="final-cta-title"> 
+                <h2>LET'S GET IN TOUCH.</h2>
+              </div>
+              <div class="footer-form"> 
+                <div class="email-hero">
+                  <div class="email-hero-column">
+                    <textarea class="hero-email-input" type="text" placeholder="Enter your email"></textarea> 
+                    <textarea class="hero-name-input" type="text" placeholder="Enter your name"></textarea> 
+                    <textarea class="hero-description-input" type="text" placeholder="Briefly tell us how we can help you"></textarea> 
+                    <button class="cta-button">Submit</button>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+
+         
+        
+        
+        
+          
+
+
+        
+       
+        
 
